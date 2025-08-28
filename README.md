@@ -25,3 +25,23 @@ Permite cadastro e autenticação de usuários, criação e inscrição em event
 ---
 
 ## 📂 Estrutura do projeto
+eventos/ # Pasta raiz do projeto
+│
+├── core/ # Aplicação principal
+│ ├── migrations/ # Arquivos de migração do banco
+│ ├── templates/ # Arquivos HTML
+│ ├── static/ # Arquivos CSS e JS
+│ ├── models.py # Definição das tabelas (Eventos, Inscrições)
+│ ├── views.py # Lógica do sistema (controllers)
+│ ├── urls.py # Rotas da aplicação
+│ └── admin.py # Configuração do admin do Django
+│
+├── eventos/ # Configurações globais do projeto Django
+│ ├── settings.py # Configurações gerais
+│ ├── urls.py # Rotas principais
+│ └── wsgi.py / asgi.py
+│
+├── db.sqlite3 # Banco de dados SQLite
+├── manage.py # Arquivo principal de execução do Django
+├── requirements.txt # Dependências do projeto
+└── README.md # Manual do projeto
